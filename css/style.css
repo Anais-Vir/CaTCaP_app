@@ -1,0 +1,286 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  text-decoration: none;
+  list-style-type: none;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #ede9e6;
+  font-family: "Inter";
+}
+
+h2{
+  font-family: 'SFTSchrifted-Regular';
+  font-size: 28px;
+  margin-bottom: 40px; 
+}
+
+@font-face {
+  font-family: 'SFTSchrifted-Regular';
+  src: url(../font/SFTSchrifted-Regular.woff) format('woff');
+}
+  
+@font-face {
+  font-family: 'SFTSchrifted-Medium';
+  src: url(../font/SFTSchrifted-Medium.woff) format('woff');
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url(../font/Inter-Regular.ttf);
+}
+
+
+
+/*header*/
+
+header {
+  overflow: visible;
+}
+
+.background{
+  background-image: url(../img/svg/background.svg);
+  width: 100%;
+  height: 867px;
+  background-size: 100% 100%;
+  overflow: visible;
+}
+
+header .Header-Nav {
+  background-color: #F5F5F5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+
+  max-width: 100%;
+  width: 100%;
+  height: 80px;
+  position: fixed;
+
+  font-family: "Inter";
+  font-size: 16px;
+
+  z-index: 10;
+}
+
+header .Header-Nav img {
+  margin-left: 100px;
+}
+
+header .Header-Nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-right: 100px;
+}
+
+header .Header-Nav ul li:last-child {
+  margin-left: 50px;
+}
+
+header .Text-Container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  width: 100%;
+
+  background-image : url(../img/svg/fond.svg);
+  background-repeat: no-repeat;
+  background-size : 100% 100%;
+}
+
+header .Text-Container h1 {
+  margin-bottom: 50px;
+  font-family: 'SFTSchrifted-Regular';
+  font-size: 30px;
+}
+
+header .Text-Container p {
+  width: 700px;
+  text-align: center;
+  font-family: "Inter";
+  font-size: 16px;
+}
+
+/* cartes de compétence */
+
+.competences{
+  margin: 110px 111px 0px 111px;
+  text-align: center;
+}
+
+
+.partie2-container{
+  box-sizing: border-box;
+  border:2px solid black;
+  border-radius : 15px;
+  margin-top: 65px;
+  height: 113px;
+  overflow: hidden;
+}
+
+.button-group{
+  margin:14px 18px;
+}
+
+.button1 button{
+  align-items: center;
+  padding: 10px 30px;
+  border-radius: 68px;
+  border: 0px;
+  margin-bottom:13px;
+}
+
+.button2 button{
+  padding: 8px 35px;
+  border: 0px;
+  background-color: #D9D9D9;
+}
+
+button{
+  margin: 3px 12px;
+}
+
+.partie3-container{
+  box-sizing: border-box;
+  height: 591px;
+  display: flex;
+  margin: 57px 0px 107px;
+  width: 100%;
+
+  background:  #ede9e6;
+  border:2px solid black;
+  border-radius : 15px;
+}
+
+/* carrousel */
+
+.slide-container{
+  position: relative;
+  margin: 0px 62px 149px 160px;
+  overflow: visible;
+}
+
+.partie4-container {
+  margin: 0px 173px 0px 173px;
+  margin-bottom: 65px;
+  text-align: center;
+}
+
+.slide-wrapper {
+  display: flex;
+  align-items: center;
+  margin-right: 98px;
+  column-gap: 50px;
+  overflow: visible;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+
+  align-items: center;
+  border-radius: 22px;
+  background-color: #eeece8;
+  overflow: hidden;
+  box-shadow: -7px 16px 104px rgba(0, 0, 0, 0.12);
+}
+
+.contenu {
+  margin: 57px 30px 30px;
+}
+
+.contenu h3{
+  margin-right: 50px;
+  font-family: 'SFTSchrifted-Medium';
+  font-size: 20px;
+}
+
+.contenu p{
+  margin: 80px 0px 150px;
+  font-family: "Inter";
+  font-size: 18px;
+}
+
+.button-help{
+  border: none;
+  background-color: #EEECE8;
+}
+
+.arrow-right{
+  position: absolute;
+  margin: auto;
+  top: 45%;
+  transform: translate(-100%);
+  left: 100%;
+
+  background-color: transparent;
+  border:none;
+}
+
+/* footer */
+
+footer{
+  position: relative;
+  background-color: #F4F4F4 ;
+  bottom:0%;
+  height: 267px;
+  width: 100%;
+}
+
+
+.haut{
+  position: absolute;
+  float: top;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  margin: 67px 1157px 177px 136px;
+}
+
+.haut img{
+  width:100%; 
+}
+
+.bas{
+  position: absolute;
+  margin: 130px 187px 80px;
+  align-items: center;
+  float: bottom;
+  display: flex;
+  flex-direction: row;
+  gap: 200px;
+}
+
+.bas a{
+  font-family: 'Inter';
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+  text-decoration: none;
+  color:black;
+}
+
+.custom-button {
+  border: 2px solid black;
+  padding: 10px 25px;
+  background-color: #F4F4F4f1;
+  border-radius: 42px;
+  font-size: 20px;
+}
+
+
